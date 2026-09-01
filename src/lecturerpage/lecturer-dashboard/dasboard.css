@@ -1,0 +1,13 @@
+.lecturer-dashboard-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lecturer-dashboard-bacgrd{
+    width: 100%
+}
+.leturer-bdy{
+    width: 97%;
+    margin: 0 auto;
+}

@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+}
+
+/* Loading state */
+
+.skeleton-loader {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px;
+  max-width: 1000px; /* adjust this to control overall width */
+}
+
+.skeleton-line {
+  height: 10px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #f1f0ec 25%, #e5e4df 50%, #f1f0ec 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+  margin-bottom: 10px;
+}
+
+.skeleton-line:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Admin side  */
+.school-admin-content {
+  width: 100%;
+}
+.school-admin-body {
+  width: 95%;
+  margin: 0 auto;
+}
+.school-admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2px;
+  /* border: 2px solid red */
+}
+
+.school-admin-header h4 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #122349;
+
+  font-family: "Bricolage Grotesque", sans-serif;
+  /* font-size: 21px; */
+  font-weight: 500;
+  /* margin: 0; */
+}
+
+.new-modal {
+  width: 130px;
+  height: 35px;
+  background-color: #1f3a78;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+
+  /* border: 2px solid red; */
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+  /* border: 2px solid green; */
+}
+
+.searchbar .list-search {
+  padding: 10px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #6b7280;
+  max-width: 350px;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.searchbar button {
+  font-size: 11.5px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 6px 11px;
+  color: #6b7280;
+  background: #fff;
+  box-sizing: border-box;
+  margin-top: -10px;
+}
+
+/* Admin - side  - table*/
+
+.school-admin-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.school-admin-table thead {
+  background-color: #e8edf7;
+}
+
+.school-admin-table th {
+  text-align: left;
+  padding: 14px 20px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #122349;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.school-admin-table td {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+}
+.school-admin-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.school-admin-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.school-admin-table td:nth-child(2) {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.school-admin-table button {
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  color: #374151;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.school-admin-table button:last-child {
+  margin-right: 0;
+  background-color: #dc2626;
+  color: white;
+  border-color: #dc2626;
+}
+
+.school-admin-table button:hover {
+  opacity: 0.9;
+}
+
+/* Add faculties */
+
+.departmentmodal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.add-department-modal {
+  background: white;
+
+  width: 400px;
+
+  padding: 30px;
+
+  border-radius: 10px;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+}
+.line {
+  margin-top: -25px;
+}

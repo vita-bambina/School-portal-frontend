@@ -1,0 +1,109 @@
+.Admindepartment-content {
+  width: 100%;
+  background-color: #fafaf8;
+  margin-top: -8px;
+  /* border: 2px solid red; */
+  height: 100vh;
+  /* margin: 0 auto; */
+}
+.Admin-department-body {
+  width: 95%;
+  margin: 0 auto;
+  /* height: 90vh; */
+}
+.Admin-department-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Admin-department-header h4 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1f3a78;
+}
+
+.New-department {
+  width: 130px;
+  height: 35px;
+  background-color: #1f3a78;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.department-searchbar {
+  gap: 10px;
+}
+.list-search {
+  width: 28%;
+  height: 30px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+ border-radius: 8px;
+}
+
+.search-btn {
+  height: 30px;
+}
+
+/* display faculties */
+.displaydepartments-container {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.displaydepartments-container th {
+  text-align: left;
+  padding: 15px;
+  background: #e9eef9;
+  font-weight: 600;
+  border: none;
+  /* border-radius: 8px; */
+}
+
+.displaydepartments-container table {
+  width: 100%;
+}
+
+.displaydepartments-container td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  border: none;
+}
+
+.displaydepartments-container tr:hover {
+  background: #fafafa;
+}
+
+/* Add faculties */
+
+.departmentmodal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.add-department-modal {
+  background: white;
+
+  width: 400px;
+
+  padding: 30px;
+
+  border-radius: 10px;
+}

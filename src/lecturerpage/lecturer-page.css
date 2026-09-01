@@ -1,0 +1,65 @@
+.lecturer-layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.lecturer-maincontent {
+  width: 85%;
+  justify-content: center;
+  align-items: center;
+}
+.lecturer-sidebar-background {
+  width: 15%;
+  background-color: #fbf0de;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.lecturer-sidebar-logo img {
+  width: 30px;
+  height: 30px;
+  /* margin-top: 5px */
+}
+.lecturer-sidebar-logo h6 {
+  font-size: 14px;
+}
+.lecturer-sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+  padding: 0px;
+}
+
+.lecturer-sidebar-body {
+  width: 97%;
+  margin-left: 5%;
+}
+.content-adjustment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 5%;
+}
+
+.content-adjustment a {
+  color: #5c3607;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 7px 4px;
+  display: flex;
+  flex-direction: column;
+  /* margin: 0px; */
+  /* border: 2px solid red; */
+}
+
+/*  */
+.Sidebar-bottom {
+  margin-top: auto;
+}
+.lecturer-sidebar-line {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}

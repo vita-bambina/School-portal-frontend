@@ -1,0 +1,76 @@
+.Adminsession-content {
+  width: 100%;
+}
+.Admin-session-body {
+  width: 95%;
+  margin: 0 auto;
+}
+.Admin-session-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Admin-session-header h4 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1f3a78;
+}
+
+.New-Session {
+  width: 130px;
+  height: 35px;
+  background-color: #1f3a78;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.level-searchbar {
+  gap: 10px;
+}
+
+.list-search {
+  width: 28%;
+  height: 30px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  border-radius: 8px;
+}
+
+.search-btn {
+  height: 30px;
+}
+
+/* table */
+
+.sessions-container {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.sessions-container th {
+  text-align: left;
+  padding: 15px;
+  background: #e9eef9;
+  font-weight: 600;
+  border: none;
+  /* border-radius: 8px; */
+}
+
+.sessions-container table {
+  width: 100%;
+}
+
+.sessions-container td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  border: none;
+}
+
+.sessions-container tr:hover {
+  background: #fafafa;
+}

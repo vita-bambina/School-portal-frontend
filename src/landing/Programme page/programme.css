@@ -1,0 +1,59 @@
+.programme-background {
+  margin: 0 auto;
+  width: 100%;
+}
+.programme-body {
+  width: 97%;
+  margin: 0 auto;
+}
+.programmerbox-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-box {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  border-color: #4a4f58;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+.container-box p {
+  margin: 0px;
+  margin-left: 15px;
+  /* color: #4a4f58; */
+}
+
+.container-box p:nth-child(2) {
+  color: #4a4f58;
+}
+#programme-name {
+  color: #4a4f58;
+  font-size: 20px;
+}
+.down-text-top{
+    width:100%;
+    background-color: #fafaf8;
+    margin-top: -8px
+
+}
+.down-text {
+  width: 97%;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+  font-size: 11px;
+  color: #4a4f58;
+}
+
+/* .line-one{
+  
+} */

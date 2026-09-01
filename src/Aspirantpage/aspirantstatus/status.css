@@ -1,0 +1,129 @@
+.Aspirantstatus-background {
+  width: 100%;
+}
+
+.Aspirantstatus-body {
+  width: 97%;
+  margin: 0 auto;
+}
+.Your-application {
+  margin-top: 40px;
+  font-size: 25px;
+  color: #3b2575;
+}
+
+/* Status card */
+
+.statuscard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.statuscard-one {
+  width: 25%;
+  font-size: 21px;
+  border: 1px solid #e2e8f0;
+  color: #3b2575;
+  border-radius: 8px;
+  line-height: 0.8;
+}
+
+.statuscard-one p {
+  margin-left: 15px;
+}
+
+.second-step {
+  font-size: 14px;
+  color: #7c828c;
+}
+
+/*  information style */
+
+.aspirant-announcement-background {
+  display: flex;
+  width: 100%;
+  gap: 3%;
+  margin-top: 3%;
+}
+
+.aspirant-background {
+  width: 60%;
+  /* border: 2px solid red; */
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 20px 24px;
+}
+
+.aspirant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.aspirant-header p:first-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3b2575;
+  margin: 0;
+}
+
+.aspirant-header p:first-child::before {
+  content: "";
+  width: 4px;
+  height: 18px;
+  background: #3b2575;
+  border-radius: 2px;
+}
+
+.aspirant-header p:last-child {
+  font-size: 14px;
+  color: #3b2575;
+  cursor: pointer;
+  margin: 0;
+}
+
+.aspirant-names {
+  line-height: 0.2;
+}
+.aspirant-unit {
+  font-size: 13px;
+  color: #7c828c;
+}
+.aspirant-content-one {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.announcement-background {
+  width: 50%;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 20px 24px;
+}
+
+.asirant-avatar-styling {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #f1ecfc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.asirant-avatar-styling p {
+  font-size: 13px;
+  font-weight: 600;
+  color: #3b2575;
+  margin: 0;
+}

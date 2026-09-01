@@ -1,0 +1,109 @@
+/* navabar styles  */
+
+.navbar-componenets {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+  margin-top: -18px;
+  /* margin-bottom: -10px; */
+  padding: 0px 0px;
+}
+
+.sch-logo-name img {
+  width: 30px;
+  height: 30px;
+}
+.sch-logo-name h6 {
+  font-size: 15px;
+}
+.sch-logo-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.programmes-admissions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #6b7280;
+  font-size: 15px;
+  /* border: 1px solid green; */
+}
+.navbarSignin {
+  background-color: #6b7280;
+  width: 80px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eef1f5;
+  border-radius: 5px;
+}
+
+/* programmes */
+.programmes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  /* margin-bottom: -10px; */
+  /* padding: 0px 0px; */
+}
+
+.faculties:hover {
+  border-color: #4a4f58;
+}
+.faculties {
+  border: 1px solid #e2e8f0;
+  width: 33%;
+  border-radius: 8px;
+}
+.faculties p {
+  margin-left: 15px;
+  color: #6b7280;
+  font-size: 14px;
+  margin-top: -8px;
+}
+
+.faculties h4 {
+  margin-left: 15px;
+}
+.departments {
+  border: 1px solid #e2e8f0;
+  width: 32%;
+  border-radius: 8px;
+}
+.departments p {
+  margin-left: 15px;
+  color: #6b7280;
+  font-size: 14px;
+  margin-top: -8px;
+}
+.departments h4 {
+  margin-left: 15px;
+}
+.departments:hover {
+  border-color: #4a4f58;
+}
+.Application-deadline {
+  border: 1px solid #e2e8f0;
+  width: 33%;
+  border-radius: 8px;
+}
+.Application-deadline h4 {
+  margin-left: 15px;
+}
+.Application-deadline p {
+  margin-left: 15px;
+
+  color: #6b7280;
+  font-size: 14px;
+  margin-top: -8px;
+}
+.Application-deadline:hover {
+  border-color: #4a4f58;
+}

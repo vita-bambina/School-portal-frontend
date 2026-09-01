@@ -1,0 +1,83 @@
+.Admission-background {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.Admission-body {
+  width: 97%;
+  margin: 0 auto;
+}
+.admission-board {
+  width: 100%;
+  background-color: #eef1f5;
+  margin-top: -8px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admission-banner-board-content {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  width: 97%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* keeps everything on the left side */
+}
+.admission-banner-board-content h4 {
+  font-size: 28px;
+  margin: 8px 2px 0px;
+  color: #334145;
+}
+.admission-banner-board-content p {
+  /* margin: 10px 0px 0px 0px; */
+  line-height: 2;
+  max-width: 400px; /* adjust this number until it wraps where you want */
+  min-width: 0;
+  color: #4a4f58;
+}
+.admissions-application {
+  background-color: #4a4f58;
+  width: 150px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eef1f5;
+  border-radius: 5px;
+  outline: none;
+}
+.admissions-application p {
+  font-size: 15px;
+}
+.requirements-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.requirements {
+  border: 1px solid #e2e8f0;
+  width: 33%;
+  border-radius: 8px;
+  /* margin: 2px solid yellow */
+}
+.requirements:hover {
+  border-color: #4a4f58;
+}
+
+.requirements p {
+  margin-left: 15px;
+  /* color: #7c828c; */
+}
+
+.requirements p:nth-last-child() {
+  margin-left: 15px;
+  color: #7c828c;
+}
+.req-req {
+  margin-left: 15px;
+  color: #7c828c;
+  font-size: 14px;
+}

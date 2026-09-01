@@ -1,0 +1,47 @@
+.registrationBoard {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f3ef;
+  padding: 40px 20px;
+}
+
+.registrationBox {
+  width: 39%;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12); */
+  /* box-sizing: border-box; */
+}
+.content-header {
+  line-height: 0.5;
+}
+.registrationContent {
+  width: 85%;
+  margin: 0px auto;
+}
+
+.Signin-btn {
+  width: 100%;
+  height: 45px;
+  border-radius: 8px;
+  background-color: #4a4f58;
+  color: white;
+}
+.forgot-credentials {
+  display: flex;
+  /* gap: 10px; */
+  justify-content: space-between;
+  align-items: center;
+  color: #4a4f58;
+  font-size: 14px;
+}
+
+
+.arrow-styling{
+   background: #f3f3ef;
+   width: 100%;
+}

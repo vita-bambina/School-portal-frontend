@@ -1,0 +1,84 @@
+.lecturer-course-content {
+  width: 100%;
+}
+.lecturer-courses-body {
+  width: 95%;
+  margin: 0 auto;
+}
+.lecturer-courses-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lecturer-courses-header h4 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #5c3607;
+}
+
+.new-course-material {
+  width: 150px;
+  height: 35px;
+  background-color: #5c3607;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.course-searchbar {
+  gap: 10px;
+}
+.list-search {
+  width: 28%;
+  height: 30px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  border-radius: 8px;
+}
+
+.search-btn {
+  height: 30px;
+}
+
+.lecturer-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.lecturer-table thead {
+  background-color: #fbf0de;
+}
+
+.lecturer-table th {
+  text-align: left;
+  padding: 14px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #5c3607;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.lecturer-table td {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+}
+.lecturer-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.lecturer-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.lecturer-table td:nth-child(2) {
+  font-weight: 600;
+  color: #1e293b;
+}

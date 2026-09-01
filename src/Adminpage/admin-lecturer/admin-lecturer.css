@@ -1,0 +1,45 @@
+.Adminlecturer-content{
+  width: 100%;
+}
+.Admin-lecturer-body {
+  width: 95%;
+  margin: 0 auto;
+}
+.Admin-lecturer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Admin-lecturer-header h4 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1f3a78;
+}
+
+.New-lecturer {
+  width: 130px;
+  height: 35px;
+  background-color: #1f3a78;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.course-searchbar {
+  gap: 10px;
+}
+.list-search {
+  width: 28%;
+  height: 30px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+ border-radius: 8px;
+}
+
+.search-btn {
+  height: 30px;
+}
+

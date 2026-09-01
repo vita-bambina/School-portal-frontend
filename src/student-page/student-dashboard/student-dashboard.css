@@ -1,0 +1,17 @@
+.Student-dashboard-header {
+  font-size: 21px;
+  color: #07453e;
+  margin-top : 0
+}
+
+.student-dashboard-backgrd {
+  width: 100%;
+  background: #fafaf8;
+  min-height: 100vh;
+  /* padding-top:25px; */
+  margin-top: -28px;
+}
+.student-dashboard-bdy {
+  width: 97%;
+  margin: 0 auto;
+}
