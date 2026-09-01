@@ -65,7 +65,7 @@ const enrollmentForm: IEnrollment = {
 function Application() {
   const [enrollment, setenrollment] = useState(enrollmentForm);
   const [errors, setErrors] = useState([]);
-  const [setenrollmentId] = useState<number | null>(null);
+  // const [enrollmentId, setenrollmentId] = useState<number | null>(null);
   const [step, setStep] = useState<number>();
   // const [submiting, setSubmiting] = useState<boolean>(false);
   const [isPending, setIsPending] = useState<boolean>(false);
@@ -84,7 +84,7 @@ function Application() {
       console.log("ENROLLMENT STATUS:", response?.status);
       console.log("CURRENT ENROLLMENT:", response);
       if (response) {
-        setenrollmentId(response.id);
+        // setenrollmentId(response.id);
 
         setenrollment((prev) => ({
           ...prev,
@@ -102,7 +102,7 @@ function Application() {
       } else {
         const draft = await startEnrollment();
 
-        setenrollmentId(draft.id);
+        // setenrollmentId(draft.id);
         setStep(draft.currentStep);
       }
     } catch (error) {
