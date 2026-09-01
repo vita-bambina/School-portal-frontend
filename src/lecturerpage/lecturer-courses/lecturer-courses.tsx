@@ -2,7 +2,7 @@ import "./lecturer-style.css";
 import DisplaylecturerCourses from "./display-lecturer-course";
 import { useState } from "react";
 function Lecturercourses() {
-  const [refresh, setRefresh] = useState(false);
+  const [refresh] = useState(false);
 
   return (
     <>

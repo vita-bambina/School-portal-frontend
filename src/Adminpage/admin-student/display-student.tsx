@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
 import { getallstudent } from "../../api/student.api";
 
-interface Admindisplayprops {
-  refresh: boolean;
-}
-function AdmindisplayStudent({ refresh }: Admindisplayprops) {
+function AdmindisplayStudent() {
   const [loading, setloading] = useState(false);
   const [display, setdisplay] = useState<any[]>([]);
 
@@ -34,7 +31,7 @@ function AdmindisplayStudent({ refresh }: Admindisplayprops) {
         <div className="school-admin-table">
           {loading ? (
             <div className="skeleton-loader">
-              {Array.from({ length: 6 }).map((item, index) => (
+              {Array.from({ length: 6 }).map((_, index) => (
                 <div key={index} className="skeleton-line" />
               ))}
             </div>

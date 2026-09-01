@@ -4,7 +4,6 @@ import {
   startEnrollment,
   getCurrentEnrollment,
   updateEnrollment,
- 
 } from "../../api/enrollment.api";
 import "./application.css";
 import Biodata from "./Components/Biodata";
@@ -66,9 +65,9 @@ const enrollmentForm: IEnrollment = {
 function Application() {
   const [enrollment, setenrollment] = useState(enrollmentForm);
   const [errors, setErrors] = useState([]);
-  const [enrollmentId, setenrollmentId] = useState<number | null>(null);
+  const [setenrollmentId] = useState<number | null>(null);
   const [step, setStep] = useState<number>();
-  const [submiting, setSubmiting] = useState<boolean>(false);
+  // const [submiting, setSubmiting] = useState<boolean>(false);
   const [isPending, setIsPending] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(true);
 
@@ -142,9 +141,9 @@ function Application() {
 
   const handleSubmit = async () => {
     try {
-      setSubmiting(true);
+      // setSubmiting(true);
       const response = await nextStep("submit");
-      setSubmiting(false);
+      // setSubmiting(false);
       console.log("Enrollment submitted successfully:", response);
     } catch (error) {
       console.error("Failed to submit enrollment:", error);
@@ -156,7 +155,7 @@ function Application() {
     console.log("data being sent to prisma", enrollment);
 
     try {
-      setSubmiting(true);
+      // setSubmiting(true);
       const res = await updateEnrollment(enrollment, isSubmit === "submit");
       console.log(isSubmit, "isSubmit ------ res");
       if (res.error) {
@@ -254,7 +253,7 @@ function Application() {
               Prev
             </button>
 
-            <button className="next-btn" onClick={()=>nextStep()}>
+            <button className="next-btn" onClick={() => nextStep()}>
               Next
             </button>
           </div>

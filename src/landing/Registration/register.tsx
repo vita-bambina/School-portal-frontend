@@ -1,5 +1,5 @@
 // import TextField from "@mui/material/TextField";
-import { InputLabel, TextField } from "@mui/material";
+import { TextField } from "@mui/material";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./registration.css";
