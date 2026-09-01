@@ -254,7 +254,7 @@ function Application() {
               Prev
             </button>
 
-            <button className="next-btn" onClick={nextStep}>
+            <button className="next-btn" onClick={()=>nextStep()}>
               Next
             </button>
           </div>
