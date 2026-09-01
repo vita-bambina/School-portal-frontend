@@ -44,7 +44,7 @@ function Displaydepartments({ refresh }: DisplayDepartmentProps) {
         <div className="school-admin-table">
           {loading ? (
             <div className="skeleton-loader">
-              {Array.from({ length: 6 }).map((item, index) => (
+              {Array.from({ length: 6 }).map((_, index) => (
                 <div key={index} className="skeleton-line" />
               ))}
             </div>

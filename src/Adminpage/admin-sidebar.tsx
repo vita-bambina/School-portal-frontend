@@ -1,11 +1,11 @@
 import logo from "../assets/images/school-logo.jpg";
 import "./home-page.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import Logout from "../logout/logout";
 // import { useNavigate } from "react-router-dom";
 function Adminsidebar() {
-  const location = useLocation();
+  // const location = useLocation();
 
   // const isActive = (path: string) => location.pathname === path;
   const [openlogout, setopenlogout] = useState(false);

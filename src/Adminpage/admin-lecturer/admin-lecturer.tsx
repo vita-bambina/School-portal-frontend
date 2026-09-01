@@ -5,7 +5,7 @@ import Displaylecturer from "./display-lecturer";
 function Adminlecturer() {
   const [openmodal, setopenmodal] = useState(false);
 
-  const [refresh, setRefresh] = useState(false);
+  const [refresh] = useState(false);
 
   return (
     <>

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { getallenrollment } from "../../api/enrollment.api";
 import { useNavigate } from "react-router-dom";
-import AspirantDetails from "./aspirant-details-page";
 
 interface Displayaspirant {
   id: number;
@@ -23,7 +22,6 @@ function DisplayAspirant({ refresh }: DisplaysaspirantProps) {
   const [loading, setloading] = useState(false);
 
   const fetchdata = async () => {
-   
     try {
       const response = await getallenrollment();
       console.log("ALL APPLICANTS:", response);
@@ -51,7 +49,7 @@ function DisplayAspirant({ refresh }: DisplaysaspirantProps) {
           <div className="school-admin-table">
             {loading ? (
               <div className="skeleton-loader">
-                {Array.from({ length: 6 }).map((item, index) => (
+                {Array.from({ length: 6 }).map((_, index) => (
                   <div key={index} className="skeleton-line" />
                 ))}
               </div>

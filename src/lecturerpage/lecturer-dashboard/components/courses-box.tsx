@@ -2,7 +2,7 @@ import "./style.css";
 import { getlecturercourse } from "../../../api/lecturer.api";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import DisplaylecturerCourses from "../../lecturer-courses/display-lecturer-course";
+
 function Coursesbox() {
   const [lecturercourse, setlecturercourse] = useState<any[]>([]);
   const navigate = useNavigate();

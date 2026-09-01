@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { Link, Outlet } from "react-router-dom";
+// import { Link, Outlet } from "react-router-dom";
 import {
   startEnrollment,
   getCurrentEnrollment,
   updateEnrollment,
-  submitEnrollment,
+ 
 } from "../../api/enrollment.api";
 import "./application.css";
 import Biodata from "./Components/Biodata";

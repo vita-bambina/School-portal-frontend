@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import Statuscard from "./Statuscard";
 import Informationcard from "./informationcard"
 // import { getCurrentEnrollment } from "../../api/enrollment.api";
-import { useState } from "react";
+
 
 function AspirantStatus() {
   return (

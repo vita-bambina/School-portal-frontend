@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Displaystudentcourse from "./display-studentcourse";
 function StudentCourses() {
-  const [refresh, setRefresh] = useState(false);
+  const [refresh] = useState(false);
   return (
     <>
       <>

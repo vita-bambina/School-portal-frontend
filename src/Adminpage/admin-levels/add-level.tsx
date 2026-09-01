@@ -88,9 +88,9 @@ function Addlevel({ closeModal, onSuccess }: AddLevelProps) {
     }
   };
 
-  const filteredDepartments = departments.filter(
-    (department) => department.facultyId === selectedFaculty,
-  );
+  // const filteredDepartments = departments.filter(
+  //   (department) => department.facultyId === selectedFaculty,
+  // );
   return (
     <Dialog open={true} onClose={closeModal} fullWidth maxWidth="sm">
       <DialogTitle>Add Level</DialogTitle>

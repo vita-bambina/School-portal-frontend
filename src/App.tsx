@@ -24,7 +24,7 @@ import Admincourses from "./Adminpage/admin-courses/admin-courses";
 import Adminlecturer from "./Adminpage/admin-lecturer/admin-lecturer";
 import Adminsessions from "./Adminpage/admin-sessions/admin-sessions";
 import Adminstudents from "./Adminpage/admin-student/admin-student";
-import Sessiondetails from "./Adminpage/admin-sessions/sessions-details";
+
 import Adminaspirant from "./Adminpage/admin-aspirant/admin-aspirant";
 import AspirantDetails from "./Adminpage/admin-aspirant/aspirant-details-page";
 import DisplaydepartmentId from "./Adminpage/components/display-departmentsId";
@@ -42,7 +42,7 @@ import Coursematerial from "./lecturerpage/course-material/coursematerial";
 import Studenthomepage from "./student-page/student-page";
 import StudentDashboard from "./student-page/student-dashboard/student-dashboard";
 import StudentCourses from "./student-page/student-courses/student-courses";
-import StudentCoursesMaterial from "./student-page/student-course-material/student-material"
+import StudentCoursesMaterial from "./student-page/student-course-material/student-material";
 function App() {
   return (
     <>
@@ -107,7 +107,7 @@ function App() {
           <Route index element={<StudentDashboard />} />
           <Route path="dashboard" element={<StudentDashboard />} />
           <Route path="courses" element={<StudentCourses />} />
-         <Route path="course-material"element = {<StudentCoursesMaterial />}/>
+          <Route path="course-material" element={<StudentCoursesMaterial />} />
         </Route>
       </Routes>
     </>

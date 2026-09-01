@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
-import { editlevel } from "../../api/level.api.";
-import { getFaculties } from "../../api/faculty.api";
-import { getDepartments } from "../../api/department.api";
+import { useState } from "react";
+
 import {
   Dialog,
   DialogTitle,
@@ -9,10 +7,6 @@ import {
   DialogActions,
   Button,
   TextField,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
 } from "@mui/material";
 import { updatesession } from "../../api/session.api";
 import { updatesemester } from "../../api/semester.api";
