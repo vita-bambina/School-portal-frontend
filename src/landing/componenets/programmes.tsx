@@ -1,15 +1,14 @@
-function Programmes() {
 
-  
+function Programmes() {
   return (
     <>
       <div className="programmes">
         <div className="faculties">
-          <h4>number of faculties</h4>
+          <h4>12 Faculties</h4>
           <p>Science, Engineering, Arts, Law and more</p>
         </div>
         <div className="departments">
-          <h4>number of departments</h4>
+          <h4>30 Departments</h4>
           <p>undergraduates and postgraduates</p>
         </div>
         <div className="Application-deadline">

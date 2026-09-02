@@ -5,10 +5,14 @@ import { useNavigate } from "react-router-dom";
 import "./registration.css";
 import { registerapi } from "../../api/auth.api";
 import { MoveLeft } from "lucide-react";
+import Visibility from "@mui/icons-material/Visibility";
+import VisibilityOff from "@mui/icons-material/VisibilityOff";
+import IconButton from "@mui/material/IconButton";
+import SignupModal from "./signupmodal";
 
 function Register() {
   const navigate = useNavigate();
-  const [message, setMessage] = useState("");
+  // const [message, setMessage] = useState("");
   const [formdata, setformdata] = useState({
     firstname: "",
     lastname: "",
@@ -16,6 +20,9 @@ function Register() {
     password: "",
   });
 
+  const [loading, setloading] = useState(false);
+  const [showpassword, setshowpassword] = useState(false);
+  const [signupSuccess, setSignupSuccess] = useState(false);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setformdata({
       ...formdata,
@@ -25,6 +32,7 @@ function Register() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setloading(true);
 
     try {
       const response = await registerapi({
@@ -33,13 +41,14 @@ function Register() {
         email: formdata.email,
         password: formdata.password,
       });
+      setSignupSuccess(true);
 
       console.log("SUCCESS:", response.data);
-      navigate("/auth/login");
-      setMessage("Account created successfully!");
+      setSignupSuccess(true);
     } catch (error) {
       console.log("ERROR:", error);
-      setMessage("Registration failed");
+    } finally {
+      setloading(false);
     }
   };
   return (
@@ -101,16 +110,28 @@ function Register() {
                 placeholder="password "
                 variant="outlined"
                 name="password"
+                type={showpassword ? "text" : "password"}
                 value={formdata.password}
                 onChange={handleChange}
                 fullWidth
                 margin="normal"
                 required
+                slotProps={{
+                  input: {
+                    endAdornment: (
+                      <IconButton
+                        onClick={() => setshowpassword(!showpassword)}
+                        edge="end"
+                      >
+                        {showpassword ? <VisibilityOff /> : <Visibility />}
+                      </IconButton>
+                    ),
+                  },
+                }}
               />
               <button type="submit" className="Signin-btn">
-                Create Account
+                {loading ? "Creating Account..." : "Create Account"}
               </button>
-              {message && <p>{message}</p>}
             </form>
             <p onClick={() => navigate("/auth/login")}>
               Already have an account?
@@ -118,6 +139,7 @@ function Register() {
           </div>
         </div>
       </div>
+      <SignupModal open={signupSuccess} />
     </>
   );
 }

@@ -25,3 +25,7 @@ export const updateFaculty = async (
 ) => {
   return api.patch(`/faculty/${id}`, data);
 };
+
+export const getfacultiescount = async () => {
+  return api.get("/faculty/count");
+};

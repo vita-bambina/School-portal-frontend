@@ -4,6 +4,9 @@ import "./registration.css";
 import { login } from "../../api/auth.api";
 import { useNavigate } from "react-router-dom";
 import { MoveLeft } from "lucide-react";
+import Visibility from "@mui/icons-material/Visibility";
+import VisibilityOff from "@mui/icons-material/VisibilityOff";
+import IconButton from "@mui/material/IconButton";
 
 function Loginpage() {
   const navigate = useNavigate();
@@ -11,7 +14,8 @@ function Loginpage() {
     email: "",
     password: "",
   });
-
+  const [loading, setloading] = useState(false);
+  const [showpassword, setshowpassword] = useState(false);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setformdata({
       ...formdata,
@@ -21,6 +25,7 @@ function Loginpage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setloading(true);
 
     console.log("LOGIN DATA:", formdata);
 
@@ -48,7 +53,8 @@ function Loginpage() {
     } catch (error: any) {
       console.log("LOGIN ERROR:", error);
       console.log("SERVER RESPONSE:", error.response?.data);
-      
+    } finally {
+      setloading(false);
     }
   };
 
@@ -86,14 +92,27 @@ function Loginpage() {
                 //   label="Password"
                 placeholder="password "
                 variant="outlined"
+                type={showpassword ? "text" : "password"}
                 name="password"
                 value={formdata.password}
                 onChange={handleChange}
                 fullWidth
                 margin="normal"
+                slotProps={{
+                  input: {
+                    endAdornment: (
+                      <IconButton
+                        onClick={() => setshowpassword(!showpassword)}
+                        edge="end"
+                      >
+                        {showpassword ? <VisibilityOff /> : <Visibility />}
+                      </IconButton>
+                    ),
+                  },
+                }}
               />
               <button type="submit" className="Signin-btn">
-                Sign in
+                {loading ? "Signing in...." : "Sign in "}
               </button>
             </form>
             <div className="forgot-credentials">
