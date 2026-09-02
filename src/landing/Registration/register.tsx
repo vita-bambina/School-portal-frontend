@@ -46,7 +46,7 @@ function Register() {
       setSignupSuccess(true);
 
       console.log("SUCCESS:", response.data);
-      setSignupSuccess(true);
+
     } catch (error) {
       setSignupError(true);
       console.log("ERROR:", error);
