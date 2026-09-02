@@ -40,8 +40,11 @@
   font-size: 14px;
 }
 
-
-.arrow-styling{
-   background: #f3f3ef;
-   width: 100%;
+.arrow-styling {
+  background: #f3f3ef;
+  width: 100%;
+}
+.Signin-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }

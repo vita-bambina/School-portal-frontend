@@ -7,6 +7,7 @@ import { MoveLeft } from "lucide-react";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import IconButton from "@mui/material/IconButton";
+import ErrorModal from "./errormodal";
 
 function Loginpage() {
   const navigate = useNavigate();
@@ -16,6 +17,7 @@ function Loginpage() {
   });
   const [loading, setloading] = useState(false);
   const [showpassword, setshowpassword] = useState(false);
+  const [signupError, setSignupError] = useState(false);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setformdata({
       ...formdata,
@@ -51,6 +53,7 @@ function Loginpage() {
         navigate("/student");
       }
     } catch (error: any) {
+      setSignupError(true);
       console.log("LOGIN ERROR:", error);
       console.log("SERVER RESPONSE:", error.response?.data);
     } finally {
@@ -111,8 +114,8 @@ function Loginpage() {
                   },
                 }}
               />
-              <button type="submit" className="Signin-btn">
-                {loading ? "Signing in...." : "Sign in "}
+              <button type="submit" disabled={loading} className="Signin-btn">
+                {loading ? "Logging in..." : "Login "}
               </button>
             </form>
             <div className="forgot-credentials">
@@ -124,6 +127,7 @@ function Loginpage() {
           </div>
         </div>
       </div>
+      <ErrorModal open={signupError} onClose={() => setSignupError(false)} />
     </>
   );
 }
