@@ -13,7 +13,7 @@ function UploadBox({ title, handleUrl, enrollment }: UploadBoxProps) {
     name: enrollment,
   });
 
-  const [url, setUrl] = useState(enrollment);
+  const [setUrl] = useState(enrollment);
 
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 

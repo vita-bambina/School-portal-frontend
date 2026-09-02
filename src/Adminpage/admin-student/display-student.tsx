@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { getallstudent } from "../../api/student.api";
 
-function AdmindisplayStudent() {
+interface Admindisplayprops {
+  refresh: boolean;
+}
+function AdmindisplayStudent({ refresh }: Admindisplayprops) {
   const [loading, setloading] = useState(false);
   const [display, setdisplay] = useState<any[]>([]);
 
@@ -23,7 +26,7 @@ function AdmindisplayStudent() {
       fetchdata();
     }, 2000);
     return () => clearTimeout(timer);
-  }, []);
+  }, [refresh]);
 
   return (
     <>

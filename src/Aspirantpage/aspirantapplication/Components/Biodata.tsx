@@ -1,6 +1,6 @@
 import "../application.css";
 import Personaldetails from "./Bioenrollment";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 interface BiodataProps {
   enrollment: any;

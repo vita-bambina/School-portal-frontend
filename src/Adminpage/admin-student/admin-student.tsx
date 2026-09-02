@@ -3,9 +3,9 @@ import { useState } from "react";
 import AdmindisplayStudent from "./display-student";
 
 function Adminstudents() {
-  const [openmodal, setopenmodal] = useState(false);
+  // const [openmodal, setopenmodal] = useState(false);
 
-  const [refresh, setRefresh] = useState(false);
+  const [refresh] = useState(false);
   return (
     <>
       <div className="school-admin-content">

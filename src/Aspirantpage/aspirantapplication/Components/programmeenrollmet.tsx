@@ -26,7 +26,7 @@ interface ProgrammeDetailsProps {
 function Programmedetails({
   enrollment,
   handleSetEnrollment,
-  nextStep,
+  // nextStep,
 }: ProgrammeDetailsProps) {
   const [faculties, setFaculties] = useState<Faculty[]>([]);
   const [departments, setDepartments] = useState<Department[]>([]);
