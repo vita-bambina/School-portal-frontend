@@ -86,6 +86,7 @@ function Loginpage() {
                 name="email"
                 value={formdata.email}
                 onChange={handleChange}
+                required
                 fullWidth
                 margin="normal"
               />
@@ -99,6 +100,7 @@ function Loginpage() {
                 name="password"
                 value={formdata.password}
                 onChange={handleChange}
+                required
                 fullWidth
                 margin="normal"
                 slotProps={{

@@ -25,11 +25,15 @@ function Register() {
   const [showpassword, setshowpassword] = useState(false);
   const [signupSuccess, setSignupSuccess] = useState(false);
   const [signupError, setSignupError] = useState(false);
+  const [emailError, setEmailError] = useState("");
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setformdata({
       ...formdata,
       [e.target.name]: e.target.value,
     });
+    if (e.target.name === "email") {
+      setEmailError("");
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -43,13 +47,18 @@ function Register() {
         email: formdata.email,
         password: formdata.password,
       });
+
       setSignupSuccess(true);
 
       console.log("SUCCESS:", response.data);
-
-    } catch (error) {
-      setSignupError(true);
+    } catch (error: any) {
       console.log("ERROR:", error);
+
+      if (error.response?.data?.message === "Email already exists") {
+        setEmailError("Email already exists");
+      } else {
+        setSignupError(true);
+      }
     } finally {
       setloading(false);
     }
@@ -105,7 +114,9 @@ function Register() {
                 fullWidth
                 margin="normal"
                 required
+                error={!!emailError}
               />
+              {emailError && <p className="email-error">{emailError}</p>}
 
               <TextField
                 className="inputfields"
