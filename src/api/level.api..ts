@@ -1,7 +1,7 @@
 import api from "./axios";
 
 export const getLevelSummary = async () => {
-  return await api.get("http://localhost:8000/level/summary");
+  return await api.get("/level/summary");
 };
 
 export const deleteLevel = (id: number) => {
@@ -12,7 +12,7 @@ export const createLevel = async (data: {
   name: string;
   departmentId: number;
 }) => {
-  return api.post("http://localhost:8000/level", data);
+  return api.post("/level", data);
 };
 
 export const getLevels = () => {

@@ -11,12 +11,12 @@ export const createDepartment = async (data: {
   jambCutOff: number;
   minimumWaecAggregate: number;
 }) => {
-  return await api.post("http://localhost:8000/department", data);
+  return await api.post("/department", data);
 };
 
 export const deleteDepartment = async (id: number) => {
   try {
-    await api.delete(`http://localhost:8000/department/${id}`);
+    await api.delete(`/department/${id}`);
 
     return true;
   } catch (error) {

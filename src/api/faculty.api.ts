@@ -1,11 +1,11 @@
 import api from "./axios";
 
 export const getFaculties = () => {
-  return api.get("http://localhost:8000/faculty");
+  return api.get("/faculty");
 };
 
 export const createFaculty = (data: { name: string; code: string }) => {
-  return api.post("http://localhost:8000/faculty", data);
+  return api.post("/faculty", data);
 };
 
 export const DeleteFaculty = async (facultyId: number) => {

@@ -1,7 +1,7 @@
 import api from "./axios";
 
 export const getLecturers = () => {
-  return api.get("http://localhost:8000/lecturer/admin-lecturers");
+  return api.get("/lecturer/admin-lecturers");
 };
 
 export const createlecturer = (data: {
@@ -12,7 +12,7 @@ export const createlecturer = (data: {
   password: string;
   facultyId: number;
 }) => {
-  return api.post("http://localhost:8000/lecturer", data);
+  return api.post("/lecturer", data);
 };
 
 export const getlecturercoursecount = () => {
