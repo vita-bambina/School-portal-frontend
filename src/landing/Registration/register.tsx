@@ -9,6 +9,7 @@ import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import IconButton from "@mui/material/IconButton";
 import SignupModal from "./signupmodal";
+import ErrorModal from "./errormodal";
 
 function Register() {
   const navigate = useNavigate();
@@ -23,6 +24,7 @@ function Register() {
   const [loading, setloading] = useState(false);
   const [showpassword, setshowpassword] = useState(false);
   const [signupSuccess, setSignupSuccess] = useState(false);
+  const [signupError, setSignupError] = useState(false);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setformdata({
       ...formdata,
@@ -46,6 +48,7 @@ function Register() {
       console.log("SUCCESS:", response.data);
       setSignupSuccess(true);
     } catch (error) {
+      setSignupError(true);
       console.log("ERROR:", error);
     } finally {
       setloading(false);
@@ -140,6 +143,7 @@ function Register() {
         </div>
       </div>
       <SignupModal open={signupSuccess} />
+      <ErrorModal open={signupError} onClose={() => setSignupError(false)} />
     </>
   );
 }
